@@ -29,10 +29,10 @@
 								<span v-if="!loading">登 录</span>
 								<span v-else>登 录 中...</span>
 							</el-button>
-							<div>
+							<!-- <div>
 								<el-button @click="register_flag=!register_flag" type="text" size="small" autocomplete="off"
 									style="margin-top: 5px;">注册</el-button>
-							</div>
+							</div> -->
 						</el-form-item>
 					</el-form>
 				</div>

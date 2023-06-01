@@ -58,11 +58,11 @@
 			<el-button :loading="loading" :disabled="goods_list.gstatus==1?false:true" style="width: 200px;height: 50px;float: right;" type="danger" @click="onSubmit">
 				<span v-if="goods_list.gstatus==0">商品未审核</span>
 				<span v-else-if="goods_list.gstatus==2">商品已售出</span>
-				<span v-else>商品已下架</span>
-				<span v-else>
+				<span v-else-if="goods_list.gstatus==1">
 					<span v-if="!loading">确认支付</span>
 					<span v-else>支 付 中...</span>
 				</span>
+				<span v-else>商品已下架</span>
 			</el-button>
 			<div style="float: right;line-height: 46px;padding-right: 46px;">
 				<span>总计</span>
